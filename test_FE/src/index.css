@@ -1,3 +1,180 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.half {
+    background: linear-gradient(to right, white 50%, rgb(170, 149, 133) 50%);
+}
+.half_bottom {
+  background: linear-gradient(to bottom, white 50%, black 50%);
+}
+.container{
+    width: 1240px;
+}
+
+.slick-slider {
+  width: 300px;
+}
+
+
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1; 
+  background-color: rgb(41, 30, 36);
+  width: 60px; 
+  height: 60px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.slick-prev:focus,
+.slick-next:focus {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.slick-prev {
+  left: -100px; 
+}
+
+.slick-next {
+  right: -100px; 
+}
+
+.slick-arrow-icon {
+  font-size: 20px;
+  color: white;
+}
+
+.slide_width{
+  width: 35%;
+}
+
+.slide_width img{
+  border-radius: 5px;
+}
+
+.slide_product,.slide_man {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.slide_product .slick-prev,
+.slide_product .slick-next {
+  top: -40px;
+}
+
+.slide_man .slick-prev,
+.slide_man .slick-next {
+  top:250px
+}
+
+.slide_product .slick-prev,.slide_man .slick-prev{
+  left: unset;
+  right: 80px;
+}
+.slide_product .slick-next,.slide_man .slick-next{
+  right: 0;
+}
+.slide_man .slide_man_child{
+  display: flex !important;
+  text-align: left;
+}
+
+.slide_product_child{
+  height: 260px;
+  position: relative;
+  text-align: left;
+  background-color: #d9d9d9;
+  padding: 70px 20px 20px 20px;
+  width: 70% !important;
+
+}
+
+.slide_product_child img{
+  position: absolute;
+  top:-80px;
+  right: 20%;
+}
+.slide_man_child img{
+  border-radius: 50%;
+}
+.price_product{
+  position: absolute;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  bottom: -20px;
+  right: 30%;
+}
+.icon_product{
+  position: absolute;
+  bottom: 40px;
+  right: 35%;
+}
+.Banner_coffe{
+  background-image: url('./src/img/banner_coffe.jpg'); 
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  height: 500px;
+  position: relative;
+}
+.title_banner_coffe{
+  position: absolute;
+  color: white;
+  font-size: 56px;
+  text-transform:uppercase ;
+  font-weight: bold;
+  width: 500px;
+  top: 40%;
+  right: 10%;
+}
+.slide_man_title{
+  font-size: 24px;
+}
+
+
+.inbox{
+  background-color: #f8fafc;
+  padding: 50px 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.inbox h1{
+  font-size: 40px;
+  font-weight: bold;
+}
+.inbox p{
+  font-size: 18px;
+  width: 550px;
+  margin: 0 auto;
+}
+
+.slide_product_child,.inbox{
+  border-top-right-radius: 50px; 
+  border-bottom-left-radius: 50px;
+}
+.border_bt{
+  border-top-right-radius: 20px; 
+  border-bottom-left-radius: 20px;
+
+}
+.inbox button{
+  background-color: black;
+}
