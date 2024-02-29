@@ -178,3 +178,42 @@
 .inbox button{
   background-color: black;
 }
+
+input,textarea,.button_create {
+  border: none; 
+  outline: none; 
+}
+
+.input_class input:focus {
+  border-bottom: 2px solid black;
+}
+
+textarea:focus {
+  border-bottom: 2px solid blue;
+}
+
+.hiuhiu input{
+  border-radius: 0;
+  border-bottom: 3px solid black;
+}
+
+.hiuhiu input:focus{
+  border-bottom: 3px solid #ffcd1f;
+}
+.img_hiuhiu{
+  border: 1px dashed black;
+}
+
+.button_create{
+  border-bottom: 5px solid #3ccfcf
+}
+.button_create:hover{
+  color: #ffcd1f;
+  border-bottom: 5px solid #ffcd1f
+
+}
+
+.kiki{
+  z-index: 1001;
+  background-color: #f6f7fb;
+}
